@@ -5,7 +5,7 @@ import json
 from flask import Flask
 import boto3
 
-lambda_client = boto3.client("lambda", region='ap-south-1')
+lambda_client = boto3.client("lambda", region_name='ap-south-1')
 app = Flask(__name__)
 
 containers = dict()
