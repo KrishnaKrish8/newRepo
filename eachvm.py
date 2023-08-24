@@ -55,7 +55,6 @@ def start_container(mail):
     users_in_vm.append(mail)
     start_time[mail] = datetime.datetime.now()
 
-
 def stop_container(mail):
     mailc = mail.replace('@', '-')
     containers[mailc].stop()
